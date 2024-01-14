@@ -1,0 +1,15 @@
+Scenario: Search for "Prowly Media Monitoring" on bing.com
+    Given the user is on the bing.com main page
+    When the user enters the search query "Prowly Media Monitoring" in the Search bar
+    And the user clicks on the search button
+    Then the search results page for "Prowly Media Monitoring" is displayed
+
+Scenario: Filter search results by the "Video" content category on bing.com
+    Given the user is on the search results page for "Prowly Media Monitoring" on bing.com
+    When the user selects the "Video" content category filter
+    Then the search results are updated to include only video content related to "Prowly Media Monitoring"
+
+Scenario: Filter search results by the "News" content category on bing.com
+    Given the user is on the search results page for "Prowly Media Monitoring"
+    When the user selects the "News" content category filter
+    Then the search results are updated to include only news articles related to "Prowly Media Monitoring"

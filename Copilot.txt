@@ -1,0 +1,15 @@
+Scenario: Use Bing Copilot to search for information on Prowly's Media Monitoring module
+    Given the user is on the bing.com chat page
+    And the user enters the query "Prowly Media Monitoring module" in "Ask me anything" firld
+    Then Bing Copilot provides relevant and actual information about "Prowly Media Monitoring" tool
+
+Scenario: Check the relevance of Bing Copilot links for Prowly Media Monitoring module
+    Given Bing Copilot has provided link on prowly.com official page
+    When the user clicks on a link
+    Then the user is directed to the prowly.com official page
+    And the user verifies the relevance and accuracy of the information
+
+Scenario: Assess different information sources provided by Bing Copilot for Prowly Media Monitoring module
+    Given Bing Copilot has provided several links for "Prowly Media Monitoring module"
+    When the user clicks on different links
+    Then the user access different sources related with "Prowly Media Monitoring module"
